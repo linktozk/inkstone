@@ -1,7 +1,12 @@
 name = "inkstone"
+workers_dev = true
 main = "src/worker/index.ts"
 compatibility_date = "2026-05-01"
 compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+
+[[routes]]
+pattern = "note.hachimi.link"
+custom_domain = true
 
 [assets]
 directory = "./dist/client"
